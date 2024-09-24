@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="510.0" prefWidth="829.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.costapp.costcontrolapp.HelloController">
+  <children>
+    <Button fx:id="closeButton" layoutX="778.0" layoutY="4.0" mnemonicParsing="false" onAction="#closeApp" style="-fx-background-color: transparent; -fx-font-size: 18px;" text="X" textFill="#e13838" />
+
+    <Pane layoutY="89.0" prefHeight="331.0" prefWidth="352.0">
+       <children>
+          <Circle fill="#6dd89f" layoutX="45.0" layoutY="68.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+          <Circle fill="#539778" layoutX="69.0" layoutY="91.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+          <Circle fill="#457666" layoutX="45.0" layoutY="91.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+          <Circle fill="#5fb68c" layoutX="69.0" layoutY="68.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+          <Text layoutX="82.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-logo" text="Семейный кошелек" wrappingWidth="332.364013671875" />
+       </children>
+    </Pane>
+    <TabPane fx:id="tabPane" layoutX="356.0" layoutY="34.0" prefHeight="442.0" prefWidth="458.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="ВХОД">
+          <content>
+            <VBox alignment="CENTER" prefHeight="349.0" prefWidth="344.0" spacing="20.0">
+              <children>
+                <TextField prefHeight="45.0" promptText="Логин">
+                  <VBox.margin>
+                    <Insets />
+                  </VBox.margin>
+                  <padding>
+                    <Insets left="20.0" />
+                  </padding>
+                </TextField>
+                <PasswordField prefHeight="45.0" promptText="Пароль">
+                  <padding>
+                    <Insets left="20.0" />
+                  </padding>
+                </PasswordField>
+                <HBox prefHeight="17.0" prefWidth="366.0">
+                  <children>
+                    <CheckBox mnemonicParsing="false" text="Запомниить" />
+                  </children>
+                  <padding>
+                    <Insets left="15.0" />
+                  </padding>
+                </HBox>
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="390.0" text="ВОЙТИ" />
+                <Hyperlink text="Забыли пароль?" />
+              </children>
+              <padding>
+                <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
+              </padding>
+            </VBox>
+          </content>
+        </Tab>
+        <Tab text="РЕГИСТРАЦИЯ">
+          <content>
+            <VBox alignment="CENTER" prefHeight="349.0" prefWidth="344.0" spacing="20.0">
+              <children>
+                <TextField prefHeight="45.0" promptText="Полное имя">
+                  <padding>
+                    <Insets left="20.0" />
+                  </padding>
+                </TextField>
+                <TextField prefHeight="45.0" prefWidth="340.0" promptText="Логин">
+                  <VBox.margin>
+                    <Insets />
+                  </VBox.margin>
+                  <padding>
+                    <Insets left="20.0" />
+                  </padding>
+                </TextField>
+                <PasswordField prefHeight="45.0" promptText="Пароль">
+                  <padding>
+                    <Insets left="20.0" />
+                  </padding>
+                </PasswordField>
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="390.0" text="ЗАРЕГИСТРИРОВАТЬСЯ" />
+                <HBox alignment="CENTER" prefHeight="9.0" prefWidth="340.0" styleClass="text-alredy">
+                  <children>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-alredy" text="У вас есть аккаунт?" />
+                    <Hyperlink fx:id="link" text="Войти" />
+                  </children>
+                </HBox>
+              </children>
+              <padding>
+                <Insets bottom="15.0" left="45.0" right="45.0" top="15.0" />
+              </padding>
+            </VBox>
+          </content>
+        </Tab>
+      </tabs>
+      <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+      </padding>
+    </TabPane>
+  </children>
+</AnchorPane>
