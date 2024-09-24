@@ -1,0 +1,40 @@
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 20;
+}
+
+.dashboard-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 10 0 0 0;
+}
+
+
+.balance-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2fbd5a;
+    -fx-padding: 5 0 15 0;
+}
+
+.dashboard-small-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #555555;
+}
+
+.income-label {
+    -fx-font-size: 22px;
+    -fx-text-fill: #3a8f41;
+    -fx-font-weight: bold;
+}
+
+.expense-label {
+    -fx-font-size: 22px;
+    -fx-text-fill: #e13838;
+    -fx-font-weight: bold;
+}
+
+.hbox {
+    -fx-padding: 10 0 0 0;
+}

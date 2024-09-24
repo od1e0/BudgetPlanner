@@ -1,0 +1,41 @@
+.rootPane {
+    -fx-background-color: #353639;
+}
+
+.header-bar {
+    -fx-background-color: #2FBD5A;
+    -fx-padding: 10;
+}
+
+.header-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+.side-bar {
+    -fx-background-color: #2A2A2E;
+    -fx-padding: 20;
+}
+
+.button {
+    -fx-pref-width: 180;
+    -fx-background-radius: 10;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.footer-bar {
+    -fx-background-color: #353639;
+    -fx-padding: 10;
+    -fx-text-fill: white;
+}
+
+.balance-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+}

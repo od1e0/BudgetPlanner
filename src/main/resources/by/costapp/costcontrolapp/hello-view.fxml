@@ -46,7 +46,7 @@
                     <Insets left="15.0" />
                   </padding>
                 </HBox>
-                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="390.0" text="ВОЙТИ" />
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="390.0" text="ВОЙТИ" onAction="#handleLogin"/>
                 <Hyperlink text="Забыли пароль?" />
               </children>
               <padding>
