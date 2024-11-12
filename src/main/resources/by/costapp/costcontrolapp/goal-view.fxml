@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox stylesheets="@goal-styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.costapp.costcontrolapp.GoalController">
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+        <TextField fx:id="goalNameField" layoutY="2.0" prefHeight="46.0" prefWidth="179.0" promptText="Название цели" />
+        <TextField fx:id="goalDescriptionField" layoutX="193.0" layoutY="2.0" prefHeight="46.0" prefWidth="179.0" promptText="Сумма" />
+        <Button layoutX="385.0" layoutY="7.0" onAction="#createGoal" text="Создать цель" />
+    </Pane>
+   <Pane prefHeight="48.0" prefWidth="496.0" />
+
+    <!-- Контейнер для карточек целей -->
+    <ScrollPane maxHeight="625.0">
+        <TilePane fx:id="goalsContainer" hgap="100" vgap="20" prefColumns="2" alignment="TOP_LEFT" />
+    </ScrollPane>
+</VBox>

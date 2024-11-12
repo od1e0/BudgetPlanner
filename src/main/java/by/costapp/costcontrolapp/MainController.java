@@ -3,6 +3,7 @@ package by.costapp.costcontrolapp;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import java.io.IOException;
@@ -13,26 +14,28 @@ public class MainController {
     private StackPane contentPane;
 
     @FXML
-    private Label balanceLabel;
-
-    @FXML
     private void showDashboard() {
         loadView("dashboard-view.fxml");
     }
 
     @FXML
-    private void showTransactions() {
-        //loadView("transactions-view.fxml");
+    private void showIncome() {
+        loadView("income-view.fxml");
     }
 
     @FXML
-    private void showAnalytics() {
-        //loadView("analytics-view.fxml");
+    private void showExpenses() {
+        loadView("expenses-view.fxml");
     }
 
     @FXML
-    private void showSettings() {
-       // loadView("settings-view.fxml");
+    private void showCategory() {
+       loadView("category-view.fxml");
+    }
+
+    @FXML
+    private void showGoal() {
+        loadView("goal-view.fxml");
     }
 
     private void loadView(String fxmlFile) {

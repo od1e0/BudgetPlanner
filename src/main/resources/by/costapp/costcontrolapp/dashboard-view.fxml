@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@dashboard-styles.css" spacing="20" alignment="CENTER">
-    <children>
-        <Label text="Общий баланс: " styleClass="dashboard-label"/>
-        <Label fx:id="totalBalanceLabel" text="10000.00" styleClass="balance-label"/>
-        <HBox alignment="CENTER" spacing="50">
-            <VBox alignment="CENTER">
-                <Label text="Доходы" styleClass="dashboard-small-label"/>
-                <Label fx:id="incomeLabel" text="5000.00" styleClass="income-label"/>
-            </VBox>
-            <VBox alignment="CENTER">
-                <Label text="Расходы" styleClass="dashboard-small-label"/>
-                <Label fx:id="expenseLabel" text="3000.00" styleClass="expense-label"/>
-            </VBox>
-        </HBox>
-    </children>
-</VBox>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.shape.Circle?>
+<AnchorPane prefHeight="585.6" prefWidth="724.8" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.costapp.costcontrolapp.DashboardController">
+        <BorderPane prefHeight="586.0" prefWidth="725.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <VBox alignment="CENTER" spacing="15" prefHeight="586.0" prefWidth="365.0">
 
+                    <!-- HBox с кругами-индикаторами -->
+                    <HBox alignment="CENTER" spacing="20">
+                        <!-- Круг с датой -->
+                        <StackPane>
+                            <Circle radius="35" style="-fx-fill: #E0F7FA; -fx-stroke: #00ACC1; -fx-stroke-width: 3;" />
+                            <VBox alignment="CENTER">
+                                <Label text="Дата" style="-fx-font-size: 12; -fx-text-fill: #00796B;" />
+                                <Label fx:id="dateLabel" text="09.11" style="-fx-font-size: 16; -fx-text-fill: #004D40;" />
+                            </VBox>
+                        </StackPane>
+
+                        <!-- Круг с остатком -->
+                        <StackPane>
+                            <Circle radius="35" style="-fx-fill: #FFF8E1; -fx-stroke: #FFB300; -fx-stroke-width: 3;" />
+                            <VBox alignment="CENTER">
+                                <Label text="Остаток" style="-fx-font-size: 12; -fx-text-fill: #F57C00;" />
+                                <Label fx:id="balanceLabel" text="12,340" style="-fx-font-size: 16; -fx-text-fill: #E65100;" />
+                            </VBox>
+                        </StackPane>
+
+                        <!-- Круг с расходами -->
+                        <StackPane>
+                            <Circle radius="35" style="-fx-fill: #E1F5FE; -fx-stroke: #0288D1; -fx-stroke-width: 3;" />
+                            <VBox alignment="CENTER">
+                                <Label text="Расходы" style="-fx-font-size: 12; -fx-text-fill: #0277BD;" />
+                                <Label fx:id="expensesLabel" text="78%" style="-fx-font-size: 16; -fx-text-fill: #01579B;" />
+                            </VBox>
+                        </StackPane>
+                    </HBox>
+
+                    <!-- PieChart -->
+                    <PieChart fx:id="pieChart" prefHeight="500.0" prefWidth="364.0" BorderPane.alignment="CENTER" />
+                </VBox>
+            </left>
+            <center>
+                <VBox alignment="CENTER" spacing="10">
+                    <BarChart fx:id="barChart" prefHeight="272.0" prefWidth="361.0">
+                        <xAxis>
+                            <CategoryAxis fx:id="barChartXAxis" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis fx:id="barChartYAxis" />
+                        </yAxis>
+                    </BarChart>
+                    <LineChart fx:id="lineChart" prefHeight="295.0" prefWidth="361.0">
+                        <xAxis>
+                            <CategoryAxis fx:id="lineChartXAxis" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis fx:id="lineChartYAxis" />
+                        </yAxis>
+                    </LineChart>
+                </VBox>
+            </center>
+        </BorderPane>
+</AnchorPane>

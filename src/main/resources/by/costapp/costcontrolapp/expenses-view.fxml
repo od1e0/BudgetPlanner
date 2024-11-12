@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@expenses-styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.costapp.costcontrolapp.ExpensesController">
+    <VBox alignment="TOP_CENTER" minWidth="-Infinity" spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+        <!-- Заголовок окна -->
+        <Label styleClass="label-title" text="Учет расходов" />
+
+        <!-- Форма для добавления расхода -->
+        <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" spacing="15">
+            <TextField fx:id="expenseAmountField" promptText="Сумма расхода" styleClass="text-field" HBox.hgrow="ALWAYS" />
+
+            <ComboBox fx:id="categoryComboBox" promptText="Категория" styleClass="combo-box" HBox.hgrow="ALWAYS">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Продукты" />
+                        <String fx:value="Жилищные расходы" />
+                        <String fx:value="Транспорт" />
+                        <String fx:value="Развлечения" />
+                        <String fx:value="Медицина" />
+                        <String fx:value="Другие" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <DatePicker fx:id="expenseDatePicker" promptText="Дата" styleClass="date-picker" HBox.hgrow="ALWAYS" />
+
+            <Button fx:id="addExpenseButton" styleClass="button" text="Добавить" />
+        </HBox>
+
+        <!-- Таблица расходов -->
+        <TableView fx:id="expenseTableView" minWidth="-Infinity" prefWidth="700.0" styleClass="table-view" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="dateColumn" prefWidth="150.0" text="Дата" />
+                <TableColumn fx:id="categoryColumn" prefWidth="200.0" text="Категория" />
+                <TableColumn fx:id="amountColumn" prefWidth="150.0" text="Сумма" />
+            </columns>
+        </TableView>
+
+        <!-- График расходов -->
+        <BarChart fx:id="expenseBarChart" styleClass="bar-chart" VBox.vgrow="ALWAYS">
+            <xAxis>
+                <CategoryAxis fx:id="barChartXAxis" label="Категории" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="barChartYAxis" label="Сумма расходов" />
+            </yAxis>
+        </BarChart>
+
+        <!-- Кнопки действий -->
+        <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" spacing="20">
+            <Button fx:id="editExpenseButton" styleClass="button" text="Изменить" />
+            <Button fx:id="deleteExpenseButton" styleClass="button" text="Удалить" />
+        </HBox>
+    </VBox>
+</AnchorPane>

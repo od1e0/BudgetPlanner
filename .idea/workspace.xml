@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c9590221-5a4e-488c-ae4f-33203960cde1" name="Changes" comment="create auth-view">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/costapp/costcontrolapp/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/costapp/costcontrolapp/ExpensesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/costapp/costcontrolapp/GoalCardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/costapp/costcontrolapp/GoalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/costapp/costcontrolapp/IncomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/category-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/category-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/expenses-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/expenses-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/goal-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/goal-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/goalCard-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/income-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/income-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/costapp/costcontrolapp/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/costapp/costcontrolapp/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/costapp/costcontrolapp/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/costapp/costcontrolapp/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/dashboard-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/dashboard-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/main-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/main-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/by/costapp/costcontrolapp/main-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2mJ04Mra1Mv6cDBpLjosNJv6JQm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/CostControlApp/src/main/resources/by/costapp/costcontrolapp&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\CostControlApp\src\main\resources\by\costapp\costcontrolapp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="by.costapp.costcontrolapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HelloApplication">
+    <configuration name="AuthApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.costapp.costcontrolapp.authPage.AuthApp" />
+      <module name="CostControlApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.costapp.costcontrolapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.costapp.costcontrolapp.HelloApplication" />
+      <module name="CostControlApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.costapp.costcontrolapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.AuthApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9590221-5a4e-488c-ae4f-33203960cde1" name="Changes" comment="" />
+      <created>1726779182572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726779182572</updated>
+      <workItem from="1726779183579" duration="1880000" />
+      <workItem from="1726864791184" duration="3234000" />
+      <workItem from="1727014876753" duration="1598000" />
+      <workItem from="1727034100852" duration="3872000" />
+      <workItem from="1727211571066" duration="2135000" />
+      <workItem from="1727577828763" duration="334000" />
+      <workItem from="1728389237966" duration="184000" />
+      <workItem from="1729079805680" duration="1079000" />
+      <workItem from="1729499484870" duration="1197000" />
+      <workItem from="1729504115467" duration="613000" />
+      <workItem from="1729538094148" duration="671000" />
+      <workItem from="1729598803430" duration="2226000" />
+      <workItem from="1730186955913" duration="6792000" />
+      <workItem from="1730313736662" duration="737000" />
+      <workItem from="1730501660248" duration="21000" />
+      <workItem from="1730825781432" duration="1498000" />
+      <workItem from="1730996494731" duration="1212000" />
+      <workItem from="1731153839159" duration="8311000" />
+      <workItem from="1731321094710" duration="1334000" />
+      <workItem from="1731396507016" duration="3185000" />
+    </task>
+    <task id="LOCAL-00001" summary="create auth-view">
+      <option name="closed" value="true" />
+      <created>1727211816344</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727211816344</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create Main-view">
+      <option name="closed" value="true" />
+      <created>1727214842448</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727214842448</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create auth-view" />
+    <MESSAGE value="create Main-view" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Main-view" />
+  </component>
+</project>

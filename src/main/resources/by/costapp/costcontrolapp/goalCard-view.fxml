@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox fx:id="goalCard" alignment="CENTER_LEFT" prefHeight="131.0" prefWidth="534.0" spacing="10" stylesheets="@goal-styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.costapp.costcontrolapp.GoalCardController">
+    <VBox style="-fx-background-color: #fff;">
+        <Label fx:id="goalNameLabel" text="Название цели" />
+        <Label text="Собрано:" wrapText="true">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Label>
+        <ProgressBar fx:id="progressBar" prefHeight="18.0" prefWidth="265.0" progress="0.09">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin></ProgressBar>
+    </VBox>
+    <Button prefHeight="42.0" prefWidth="90.0" text="Внести">
+      <font>
+         <Font size="16.0" />
+      </font></Button>
+    <Button onAction="#removeGoal" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: bf0000;" text="Удалить">
+      <font>
+         <Font size="16.0" />
+      </font></Button>
+</HBox>

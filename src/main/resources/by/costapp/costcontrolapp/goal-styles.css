@@ -1,0 +1,63 @@
+/* Основной стиль контейнеров */
+VBox, HBox {
+    -fx-padding: 15;
+}
+
+ScrollPane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Стиль заголовков и текста */
+Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-wrap-text: true;
+}
+
+/* Стиль для полей ввода текста */
+TextField, TextArea {
+    -fx-prompt-text-fill: #999;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d3d3d3;
+    -fx-border-width: 1;
+    -fx-padding: 6 10;
+    -fx-background-color: #fff;
+    -fx-font-size: 14px;
+}
+
+/* Стиль для кнопок */
+Button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+Button:hover {
+    -fx-background-color: #45a049;
+}
+Button:pressed {
+    -fx-background-color: #3e8e41;
+}
+
+/* Стиль для карточки цели */
+#goalCard {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-border-color: #d3d3d3;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 3);
+}
+
+/* Стиль для контейнера целей */
+#goalsContainer {
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}

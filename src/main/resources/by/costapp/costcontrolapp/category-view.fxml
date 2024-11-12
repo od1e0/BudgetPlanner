@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.lang.String?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@category-styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.costapp.costcontrolapp.CategoryController">
+    <VBox alignment="TOP_CENTER" minWidth="-Infinity" spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+        <!-- Заголовок окна -->
+        <Label styleClass="label-title" text="Учет категорий" />
+
+        <!-- Форма для добавления категории -->
+        <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" spacing="15">
+            <TextField fx:id="categoryNameField" promptText="Название категории" styleClass="text-field" HBox.hgrow="ALWAYS" />
+
+            <ComboBox fx:id="categoryTypeComboBox" promptText="Тип" styleClass="combo-box" HBox.hgrow="ALWAYS">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Доход" />
+                        <String fx:value="Расход" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <Button fx:id="addCategoryButton" styleClass="button" text="Добавить" />
+        </HBox>
+
+        <!-- Таблица категорий -->
+        <TableView fx:id="categoryTableView" minWidth="-Infinity" prefWidth="500.0" styleClass="table-view" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="categoryNameColumn" prefWidth="250.0" text="Название" />
+                <TableColumn fx:id="categoryTypeColumn" prefWidth="150.0" text="Тип" />
+            </columns>
+        </TableView>
+
+        <!-- Кнопки действий -->
+        <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" spacing="20">
+            <Button fx:id="editCategoryButton" styleClass="button" text="Изменить" />
+            <Button fx:id="deleteCategoryButton" styleClass="button" text="Удалить" />
+        </HBox>
+    </VBox>
+</AnchorPane>
